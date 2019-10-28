@@ -15,14 +15,16 @@ body {
 #menu-outer{
   /* background-color: darkgray; */
   height: auto;
-}
+  }
 
 .table{
   margin: 0 auto;
+  filter: drop-shadow(-5 0 5px #f8b232);
 }
 
 .TopBar{
-  min-width: 90%;
+  min-width: 100%;
+  
   margin: 0;
   display: inline-flex;
   flex-direction: row;
@@ -43,10 +45,12 @@ body {
   display: block;
   padding: 1em;
   color: white;
+  font-size: 1.5em;
 }
 
-.TopBar li:hover{
-  border: solid black;
+li:hover{
+    filter: drop-shadow(0 0 5px #f8b232);
+    text-shadow: 0 0 2px #f8b232;
 }
   
 main {
