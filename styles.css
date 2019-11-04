@@ -1,8 +1,30 @@
 
+ 
+/* Medium devices under 600px   LCON and LOGO disappear, li and p text resized smaller */
+@media screen and (max-width: 600px) {  
+  *{
+    font-size: .90rem;
+    flex-direction: column;
+  }
+  .TopBar, .icon, .logo{
+    display: none;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+  }
+  li {
+    font-size: .50rem;
+  }
+
+}
+
+/* --- Jus tsome code to help outline all elements if needed.* {
+  border: solid 1px black;
+} */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: rgb(221,230,247);
-  background: linear-gradient(132deg, rgba(221,230,247,1) 0%, rgba(20,24,45,1) 100%, rgba(97,73,39,1) 100%);
+  background: linear-gradient(1deg, rgba(221,230,247,1) 0%, rgba(20,24,45,1) 100%, rgba(97,73,39,1) 100%);
 }
  
 .logo {
@@ -11,56 +33,58 @@ body {
   height: auto;
   margin: auto;
 }
+.maincontent{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
 
-#menu-outer{
-  /* background-color: darkgray; */
-  height: auto;
-  }
+.mfc, p{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  line-height: 1.5rem;
+}
+
 
 .table{
   margin: 0 auto;
-  filter: drop-shadow(-5 0 5px #f8b232);
+  
 }
 
 .TopBar{
-  min-width: 100%;
-  
+  min-width: 90%;
   margin: 0;
   display: inline-flex;
   flex-direction: row;
-  justify-content: space-around;  
+  justify-content: space-around; 
   align-items: center;
   list-style: none;
   background: deepskyblue;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  filter: drop-shadow(0 0 10px lightgray);
 
 }
 
-.TopBar a{
-  /* filter: drop-shadow(0 0 5.5rem #f8b232); */
+.TopBar a, li{
+  /* filter: drop-shadow(0 0 5px #f8b232); */
   text-decoration: none;
+  text-align: center;
   display: block;
-  padding: 1em;
+  padding: 1rem;
   color: white;
-  font-size: 1.5em;
-}
+  font-size: 1.5rem;
+  } 
 
 li:hover{
     filter: drop-shadow(0 0 5px #f8b232);
     text-shadow: 0 0 2px #f8b232;
 }
   
-main {
-  height: auto;
-  width: 100%;
-}
+
   
 #profile-pic {
-  margin: 1% auto;
-  grid-column: 1;
+  margin: 1% auto  ;
+  filter: drop-shadow(0 0 10px lightgray)
 }
 
 /* ul {

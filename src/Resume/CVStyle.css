@@ -1,0 +1,47 @@
+/* * {
+  border: 1px solid black;
+} */
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(221,230,247);
+  background: linear-gradient(90deg, rgba(221,230,247,1) 2%, rgb(116, 130, 201) 100%, rgba(97,73,39,1) 100%);
+
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  /* align-content: space-between; */
+  padding: 2%;
+  
+}
+.Text{
+  margin-left: 10px;
+  align-self: auto;
+}
+.Resume{
+  display: flex;
+  flex-direction: row;
+  /* align-content: space-between; */
+  padding: 2%;
+  
+}
+.LeftColumn ul{
+  list-style: none;
+} 
+
+.WorkExperience, ul{
+  padding: 2%;
+  list-style: circle;
+  margin-left: 10px;
+} 
+
+hr {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+
+
