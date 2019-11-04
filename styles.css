@@ -1,15 +1,19 @@
 
  
 /* Medium devices under 600px   LCON and LOGO disappear, li and p text resized smaller */
+
 @media screen and (max-width: 600px) {  
   *{
     font-size: .90rem;
     flex-direction: column;
+    text-align: center;
   }
   .TopBar, .icon, .logo{
     display: none;
     flex-wrap: wrap; 
-    justify-content: flex-start;
+  }
+  .TopBar{
+    flex-direction: column;
   }
   li {
     font-size: .50rem;
@@ -17,7 +21,8 @@
 
 }
 
-/* --- Jus tsome code to help outline all elements if needed.* {
+
+/* --- Just some code to help outline all elements if needed.* {
   border: solid 1px black;
 } */
 
@@ -62,7 +67,6 @@ body {
   list-style: none;
   background: deepskyblue;
   filter: drop-shadow(0 0 10px lightgray);
-
 }
 
 .TopBar a, li{
@@ -76,11 +80,9 @@ body {
   } 
 
 li:hover{
-    filter: drop-shadow(0 0 5px #f8b232);
-    text-shadow: 0 0 2px #f8b232;
+  filter: drop-shadow(0 0 5px #f8b232);
+  text-shadow: 0 0 2px #f8b232;
 }
-  
-
   
 #profile-pic {
   margin: 1% auto  ;
