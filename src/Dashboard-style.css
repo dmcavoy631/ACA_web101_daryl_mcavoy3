@@ -1,0 +1,12 @@
+body{
+  display: grid;
+  background: ;
+  grid-column: 25% 50% 25%;
+  grid-row: 40% 40% 10% 10%;
+}
+
+/* Greeting
+Calculator
+Date and Clock
+Todo List
+BackGround Image */

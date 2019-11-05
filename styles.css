@@ -12,9 +12,7 @@
     display: none;
     flex-wrap: wrap; 
   }
-  .TopBar{
-    flex-direction: column;
-  }
+
   li {
     font-size: .50rem;
   }
