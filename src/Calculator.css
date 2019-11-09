@@ -1,0 +1,32 @@
+.Container{
+  margin: auto;
+  max-width: 110px;
+}
+.CalcContRw1{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1px;
+} 
+
+.CalcContRw2{
+  display: flex;
+  justify-content: space-around;
+
+} 
+.CalcContRw3{
+  display: flex;
+  justify-content: space-around;
+} 
+.CalcContRw4{
+  display: flex;
+  justify-content: space-between;
+} 
+.CalcContRw5{
+  display: flex;
+  justify-content: space-between;
+} 
+.CalcContRw6{
+  display: flex;
+  justify-content: space-between;
+} 
+

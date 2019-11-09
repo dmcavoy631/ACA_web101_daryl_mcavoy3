@@ -7,14 +7,109 @@
   <link rel="stylesheet" href="./Dashboard-style.css">
   <title>DashBoard Page</title>
 </head>
-<body>
-  <ul>
-    <li>Greeting</li>
-    <li>Calculator</li>
-    <li>Date and Clock</li>
-    <li>Todo List</li>
-    <li>BackGround Image</li>
-    <p>Hi</p>
-  </ul>
-</body>
+  <body>
+  <div class="Dashboard">
+    <!-- Weather GRID -->
+    <div class="Weather">
+      <p class="WeatherFnt">80 and Sunny</p>
+    </div>
+    
+
+    <!-- Calc GRID -->
+    <div class="Calc">
+      <p>Calculator</p>
+      <img class="CalcImg" src="..//src/images/CalcImage.jpg" alt="">
+    </div>
+    
+     <!-- Greet GRID -->
+    <div class="Greet">
+      <p>Greetings and Welcome to your dashboard.</p>
+      <hr>
+    </div>
+
+<!-- Todo Start -->
+<div class="Todo">  
+
+       <!-- Todo Internal Grid 2 Columns Start -->
+      <div class="TodoFlex">
+        <div>
+          <ul class="TDtask">
+            <p>Task</p>
+            <li>
+            <input type="text" name="Todo" value="..."> 
+            </li>
+            <li>
+            <input type="text" name="Todo" value="..."> 
+            </li>
+            <li>
+            <input type="text" name="Todo" value="..."> 
+            </li>
+            <li>
+            <input type="text" name="Todo" value="..."> 
+            </li>
+            <li>
+            <input type="text" name="Todo" value="..."> 
+            </li>
+          </ul>
+        </div>
+        <div> 
+          <ul class="TDdone"> 
+            <p>Done</p>
+              <li>
+              <input type="checkbox" id="Item 1" value="Item 1">
+              </li> 
+              <li>
+              <input type="checkbox" id="Item 2" value="Item 2">
+              </li>
+              <li>
+              <input type="checkbox" id="Item 3" value="Item 3">
+              </li>
+              <li>
+              <input type="checkbox" id="Item 4" value="Item 4">
+              </li>
+              <li>
+              <input type="checkbox" id="Item 5" value="Item 5">
+              </li>
+          </ul>
+        </div>
+      </div>
+</div>
+
+    <!-- Todo Start -->
+
+
+    <!-- Date and Time-->
+    <div class="DDTT">
+      <p id="clockbox"></p>
+    </div> 
+    
+<!-- JAVASCRIPT for clock -->
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script> -->
+      
+    </div>
+  </body>
 </html>
