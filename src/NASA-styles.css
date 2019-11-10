@@ -5,16 +5,104 @@
 } */
 
 h3{
-  font: bold;
   color: black;
-  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .li{
   list-style: none;
 }
 
+
+/* ROCKET Affect on text */
+@keyframes glow {
+  to {
+    text-shadow: 0 1px 4px #FFF, 0 2px 10px #ff0, 0 10px 20px #ff8000, 0 18px 40px #F00, 0px 0px 0px rgba(206,89,55,0);
+    color: #FFFFFF;
+    
+  }
+}
+.ImageTitle:hover{
+  animation: glow .005s infinite alternate-reverse;
+}
+
+ul{
+  font-family: 'Nunito', sans-serif;
+  list-style: none;
+  padding-left: 0pt;
+}
+p{
+  margin-bottom: 0;
+}
+input{
+  width: 95%;
+}
+textarea{
+  width: 95%;
+}
+
+button{
+  background-color: rgb(59, 59, 59);
+  border: rgb(59, 59, 59) ;
+  color: white;
+  font-size: 16px ;
+  padding: 5px 15px;
+}
+
 .top{
+  display: flex;
+  align-items: center;
+  height: 450px;
+  width: 850px;
+  margin: 0 auto;
+  background-image: url(./NASAPage.jpg);
+  background-size: 850px;
+  margin-bottom: 20px;
+}
+
+.bottom{
+  display: flex;
+  width: 850px;
+  height: 324px;
+  margin: 0 auto;
+  background: lightgray;
+  justify-content: space-around;
+}
+
+.ImageTitle{
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-size: 100px;
+  margin: 0 auto;
+}
+
+.Social{
+  font-family: 'Nunito', sans-serif;
+  width: 270px;
+  margin-right: 20px;
+  margin-left:  20px;
+}
+
+.Office{
+  font-family: 'Nunito', sans-serif;
+  width: 270px;
+  margin-right: 20px;
+}
+
+.Contact{
+  font-family: 'Nunito', sans-serif;
+  width: 270px;
+  margin: 0;
+  margin-right: 20px;
+} 
+
+
+
+
+
+/* THIS IS GRID CODE */
+/* .top{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 450px;
@@ -32,26 +120,9 @@ h3{
   font-size: 85px;
   align-self: center;
   text-align: center;
-}
+} */
 
-@keyframes glow {
-  to {
-    text-shadow: 0 1px 4px #FFF, 0 2px 10px #ff0, 0 10px 20px #ff8000, 0 18px 40px #F00, 0px 0px 0px rgba(206,89,55,0);
-    color: #FFFFFF;
-    
-  }
-}
-.ImageTitle:hover{
-  animation: glow .005s infinite alternate-reverse;
-}
-
-ul{
-  font-family: 'Nunito', sans-serif;
-  list-style: none;
-  padding-left: 0pt;
-}
-
-.bottom{
+/* .bottom{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 324px;
@@ -81,17 +152,10 @@ ul{
   padding: 0pt;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-input{
-  width: 95%;
-}
-textarea{
-  width: 95%;
-}
-button{
-  background-color: rgb(59, 59, 59);
-  border: rgb(59, 59, 59) ;
-  color: white;
-  font-size: 16px ;
-  padding: 5px 15px;
-}
+} */
+/* ABOVE IS GRID CODE  */
+
+
+
+
+
