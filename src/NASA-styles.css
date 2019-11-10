@@ -63,10 +63,8 @@ ul{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 324px;
   column-gap: 20px;
-  padding: 20px;
   background: lightgray;
-  grid-column: 1 / span 3;
-  
+  max-width: 850px;
 }
 .Social{
   grid-column: 1;
@@ -92,10 +90,10 @@ ul{
   margin-bottom: 0px;
 }
 input{
-  width: 100%;
+  width: 95%;
 }
 textarea{
-  width: 100%;
+  width: 95%;
 }
 button{
   background-color: rgb(59, 59, 59);
