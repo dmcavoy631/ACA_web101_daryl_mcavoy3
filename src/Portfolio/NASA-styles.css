@@ -56,7 +56,7 @@ button{
   height: 450px;
   width: 850px;
   margin: 0 auto;
-  background-image: url(./NASAPage.jpg);
+  background-image: url(../images/NASA/NASAPage.jpg);
   background-size: 850px;
   margin-bottom: 20px;
 }
