@@ -1,0 +1,70 @@
+
+.title-important {
+  text-align: center;
+  background-color: red;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3em;
+  border-radius: 25px;
+  box-shadow: -10px 10px 5px grey;
+  border: solid rgba(71, 61, 139, 0.479);
+}
+main {
+  width: 60%;
+  margin: 5% auto;
+  background-color: rgba(62, 74, 129, 0.432);
+  border-radius: 25px;
+  box-shadow: -10px 10px 5px grey;
+  padding: 5%;
+}
+
+.spanTest {
+  color: darkseagreen;
+}
+
+.firstLetter:hover{
+  font-size-adjust: 1;
+}
+article {
+  border: 2px solid darkgray;
+  margin: 2% auto;
+  width: 90%;
+  background: white;
+  margin-top: 5% top;
+  align-content: center;
+  border-radius: 25px;
+  box-shadow: -10px 10px 5px grey;
+}
+
+.article1 {
+  text-align: center;
+}
+.article1:hover{
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.article2 {
+  text-align: center;
+}
+.article3 {
+  text-align: center;
+}
+.article4 {
+  text-align: center;
+
+}
+.article1:hover {
+	animation: rotate-center 1s ease-in-out both;
+}
+.article2:hover {
+	animation: rotate-vert-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.article3:hover {
+  
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: flip-scale-up-hor 1s linear both;
+}
+
+.article4:hover {
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
