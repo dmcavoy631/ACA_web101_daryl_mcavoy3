@@ -8,11 +8,12 @@
     flex-direction: column;
     text-align: center;
   }
-  .TopBar, .icon, .logo{
+  .TopBar, .icon, .logo,{
     display: none;
     flex-wrap: wrap; 
+    
   }
-
+  
   li {
     font-size: .50rem;
   }
@@ -36,10 +37,8 @@ body {
   height: auto;
   margin: auto;
 }
-.maincontent{
+.maincontent img{
   display: flex;
-  align-items: center;
-  text-align: left;
 }
 
 .mfc, p{
@@ -47,12 +46,6 @@ body {
   flex-direction: column;
   margin-left: 10px;
   line-height: 1.5rem;
-}
-
-
-.table{
-  margin: 0 auto;
-  
 }
 
 .TopBar{
@@ -68,7 +61,6 @@ body {
 }
 
 .TopBar a, li{
-  /* filter: drop-shadow(0 0 5px #f8b232); */
   text-decoration: none;
   text-align: center;
   display: block;
@@ -83,6 +75,7 @@ li:hover{
 }
   
 #profile-pic {
-  margin: 1% auto  ;
+  margin: 1% auto;
+  max-width:45%;
   filter: drop-shadow(0 0 10px lightgray)
 }
