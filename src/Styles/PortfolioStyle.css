@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+
+#myVideo {
+  position: relative;
+  right: 0;
+  margin-top: 50px;
+  width: 100%; 
+  height: auto;
+}
+
+a{
+  color: white;
+}
+a:visited{
+  text-decoration: none;
+}
+
+.Menu_Header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000;
+  height: 50px;
+  padding: 5%;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 28px;
+  padding: 2%;
+  -webkit-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+}
+
+
+/* .grid{
+  position: relative;
+  padding: 2%;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 2.vh;
+} */
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position:relative;  
+  /* top: 0; */
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 2.vh;
+  padding: 2%;
+  -webkit-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 2.vh;
+  -webkit-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+
+
+}
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+body {
+  margin: 0;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 17px;
+  background-color: rgba(58, 56, 56, 0.712);
+  
+}
+
+/* HORIZONTAL GRID CODE */
+
+:root {
+--gutter: 20px;
+}
+
+.app {
+/* padding: var(--gutter) 0;
+display: grid;
+grid-gap: var(--gutter) 0;
+grid-template-columns: var(--gutter) 1fr var(--gutter);
+align-content: start; */
+}
+
+.app > * {
+/* column: 2 / -2; */
+}
+
+.app > .full {
+/* column: 1 / -1; */
+}
+
+.hs {
+display: grid;
+grid-gap: calc(var(--gutter) / 2);
+grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+grid-template-rows: minmax(150px, 1fr); 
+/* overflow-x: scroll; */
+scroll-snap-type: x proximity;
+/* padding-bottom: calc(.75 * var(--gutter)); */
+/* margin-bottom: calc(-.25 * var(--gutter)); */
+}
+
+
+/* Demo styles */
+
+/* html,
+body {
+height: 100%;
+} */
+
+/* body {
+display: grid;
+place-items: center;
+background: #456173;
+} */
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+h1,
+h2,
+h3 {
+margin: 0;
+}
+
+.app {
+position: absolute;
+top: 50%;
+width: auto;
+height: auto;
+/* background: #DBD0BC; */
+
+}
+
+.hs > li,
+.item {
+scroll-snap-align: center;
+padding: calc(var(--gutter) / 2 * 1.5);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #fff;
+border-radius: 8px;
+}
+
