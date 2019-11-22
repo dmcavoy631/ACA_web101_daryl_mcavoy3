@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
 
 body{
   background-color: #668DE6;
@@ -6,7 +6,13 @@ body{
 }
 
 p{
-  font-family: 'Merriweather', serif;
+  font-family: 'Odibee Sans', cursive;
+  margin-left: 10px;
+}
+
+h2{
+  font-family: 'Odibee Sans', cursive;
+  margin-left: 10px;
 }
 .topbar{
   display: flex;
@@ -31,6 +37,7 @@ button{
   width: 15%;
   height: 70%;
   margin-right: 10px;
+  font-family: 'Odibee Sans', cursive;
 }
 
 .mainImage{
