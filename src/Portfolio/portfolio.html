@@ -4,12 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../Styles/PortfolioStyle.css"> 
   <title>Portfolio</title>
 </head>
 <body>
-  <a href="Dashboard.html">DashBoard</a>
-  <a href="nasa.html">NASA</a>
-  <a href="hair.html">Dog Salon</a>
-  <a href="/Resume/Resume.html">Resume</a>
+
+<video autoplay muted loop id="myVideo">
+    <source src="../video/PexelVideo2006729.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+
+<header class="Menu_Header"> 
+  <a href="About.html">About</a>
+  <a href="Portfolio.html">Portfolio</a>        
+  <a href="Contact.html">Contact</a>
+</header>
+
+
+
+<div class="app">
+    <h1>Pick a Site</h1>
+    <div class="SmlBoxs">
+
+    </div>
+</div>
+  
+  
+
+<!-- <div class="grid">
+    <a href="Dashboard.html">DashBoard</a>
+    <a href="Nasa.html">NASA</a>
+    <a href="Hair.html">Dog Salon</a>
+    <a href="/Resume/Resume.  html">Resume</a>
+</div> -->
+
+<div class="content">
+    <h1>Welcome to my super portfolio site!!!</h1>
+    <p>This is a collections of sites I've created.. some are great some not so much.</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+
+
+</div>
 </body>
+<script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+</script>
 </html>
