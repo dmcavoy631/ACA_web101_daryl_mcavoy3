@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
 
+
+#myVideo {
+  position: relative;
+  right: 0;
+  margin-top: 50px;
+  width: 100%; 
+  height: auto;
+}
+
 a{
   color: white;
 }
@@ -57,6 +66,7 @@ a:visited{
   box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
   z-index: 1000;
 
+
 }
 #myBtn:hover {
   background: #ddd;
@@ -71,6 +81,7 @@ body {
 }
 
 /* HORIZONTAL GRID/FLEX CODE */
+
 
 .videobox{
   position: relative;
@@ -105,3 +116,43 @@ body {
 
   }
 } 
+
+/* .app {
+  display: flexbox;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+h1,
+h2,
+h3 {
+margin: 0;
+}
+
+.app {
+position: absolute;
+top: 50%;
+width: auto;
+height: auto;
+/* background: #DBD0BC; */
+
+}
+
+
+/* 
+.hs > li,
+.item {
+scroll-snap-align: center;
+padding: calc(var(--gutter) / 2 * 1.5);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #fff;
+border-radius: 8px;
+} */
+ */
+
