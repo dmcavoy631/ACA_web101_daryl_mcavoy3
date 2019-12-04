@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {  
+  *{
+    font-size: .90rem;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+  }
+  
+  li {
+    font-size: .50rem;
+  }
+}
+
+.AboutFB{
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  
+}
+.ArticalFI{
+  max-width: 50%;
+  background: steelblue;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 5%;
+  -webkit-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+}
+
+img{
+  max-width: 98%;
+  
+}
+body{
+  background-color: rgba(37, 37, 37, 0.712);
+  text-align: center;
+}
+
+.Menu_Header{
+  border-radius: 10px;
+  font-size: 28px;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #000;
+  height: 50px;
+  padding: 5%;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 3.vh;
+  padding: 2%;
+  -webkit-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 23px 31px 1px rgba(0,0,0,0.75);
+}
