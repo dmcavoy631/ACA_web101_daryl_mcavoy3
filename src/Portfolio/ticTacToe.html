@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Styles/ticTacToe.css">
+</head>
+<body>
+
+  <!-- Button for X's and O's -->
+  <button onclick="gameMarker('X')">"X"</button>
+  <button onclick="gameMarker('O')">"O"</button>
+
+  <!-- GameBaord Grid 3x3 -->
+  <div class="gameBoard">
+    <div onclick="placeMark('b1')" class="box "id="b1">
+    <p></p></div>
+    <div onclick="placeMark('b2')" class="box "id="b2"></div>
+    <div onclick="placeMark('b3')" class="box "id="b3"></div>
+    <div onclick="placeMark('b4')" class="box "id="b4"></div>
+    <div onclick="placeMark('b5')" class="box "id="b5"></div>
+    <div onclick="placeMark('b6')" class="box "id="b6"></div>
+    <div onclick="placeMark('b7')" class="box "id="b7"></div>
+    <div onclick="placeMark('b8')" class="box "id="b8"></div>
+    <div onclick="placeMark('b9')" class="box "id="b9"></div>
+  </div>
+
+  <!-- Calling javascript file -->
+  <script src="../JavaScript/ticTacToe.js"></script>
+</body>
+</html>

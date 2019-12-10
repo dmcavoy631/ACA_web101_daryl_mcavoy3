@@ -1,0 +1,13 @@
+.gameBoard {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+
+.box{
+  border: black 1px solid;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 35%;
+}
+
