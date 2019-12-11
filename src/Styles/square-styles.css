@@ -1,0 +1,99 @@
+
+.main{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: space-evenly;
+  width: 900px;
+}
+body{
+  background-color: silver;
+}
+
+.sqr{
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.main:hover .sqr:nth-child(even){
+  animation: counterClkWise 5s infinite;
+    
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+
+/* Rotations & Transforms EVEN Squares, Slide Left */
+@keyframes counterClkWise{
+  0%{ 
+    transform: rotate(0);margin-left: 50%;
+  }
+  100%{
+    transform: rotate(-360deg)scale(.5,.5);
+    margin-left: 0%;
+  }
+}
+
+.main:hover .sqr:nth-child(odd){
+  animation: clockwise 5s infinite;
+  animation-direction: alternate;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+
+}
+
+/* Rotations & Transforms 
+ODD Squares, Slide Right */
+@keyframes clockwise{
+  0%{ 
+    transform: rotate(0) translate();
+    margin-right: 50%;
+  }
+  100%{
+    transform: rotate(360deg) scale(2,2);
+    margin-right: 0%;
+  }
+}
+
+/* Individual colors */
+.one{
+  background-color: #f09d5e;
+}
+.two{
+  background-color: #0f7173;
+}
+.three{
+  background-color: #e7ecef;
+}
+.four{
+  background-color: #272932;
+}
+.five{
+  background-color: #d8a47f;
+}
+.six{
+  background-color: #e980fc;
+}
+.seven{
+  background-color: #ddfff7;
+}
+.eight{
+  background-color: #ffd972;
+}
+.nine{
+  background-color: #f05d5e;
+}
+.ten{
+  background-color: #a7e8bd;
+}
+.eleven{
+  background-color: #fcbcb8;
+}
+.twelve{
+  background-color: #c7eae4;
+}
