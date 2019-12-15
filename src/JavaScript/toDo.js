@@ -3,7 +3,7 @@ $(document).ready(function() {
   let $todoList = $('#todoList');
 
   // Identify list div
-  $('#todoList').css('border', '4px solid red');
+  //$('#todoList').css('border', '4px solid red');
   
   $todoList.on('submit', function(){
     //  Get input value
