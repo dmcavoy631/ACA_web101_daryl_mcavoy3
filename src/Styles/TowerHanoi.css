@@ -1,0 +1,52 @@
+
+.gameBoard{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: cornflowerblue;
+  border: darkblue solid 5px;
+  width: 800px;
+  height: 600px;
+
+}
+
+/* .pole{
+  width: 20px;
+  height: 400px;
+  background-color: darkgoldenrod;
+  z-index: 0;
+  position: absolute;
+} */
+
+/* [tower].pos1 .pos2 .pos3{
+  display: flex;
+  flex-direction: column;
+} */
+.gamePiece{
+  border-radius: 15%;
+  margin: 0 auto;
+  border: black solid 1px;
+}
+
+.Sml{
+  width: 50px;
+  height: 40px;
+  background-color: rgb(11, 184, 25);
+}
+
+.Med{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(43, 11, 184);
+}
+
+.Lrg{
+  width: 150px;
+  height: 40px;
+  background-color: rgb(184, 11, 11);
+}
+
+[tower]{
+  display: flex;
+  flex-direction: column;
+}
