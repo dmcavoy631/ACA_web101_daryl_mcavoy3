@@ -1,26 +1,32 @@
 $(document).ready(function() {
-  var $gamePiece = "";
-  var $gamePos = "";
+  var $gamePiece = null;
+  var $gamePos = null;
   
 
   $('.gamePiece').click(function(){
-    let $gamePiece = $(this);
+    $gamePiece = $(this);
     //  log gamePiece
     console.log(this);
     // append game 
-    $(this).appendTo($(this).parent());
+    // $(this).appendTo($(this).parent());
 
 
   });
 
-  $('[class^="pos"]').click(function(){
-    //  Append gamePiece to CSS flex row
-    let $gamePos = $(this);
-    console.log($gamePos);
-    $(this).append(this);
-    // append gamePiece to pos
-    // $(this).append(`${gamePiece}`);
+  $('[class^="tower"]').click(function(){
+    //  set $gamePos
+    $gamePos = $(this);
 
+    // log gamePos and gamePiece
+    console.log($gamePos, $gamePiece);
+
+
+    if ($gamePiece){
+    // append gamePiece to pos
+    $(this).append($gamePiece);
+    // $gamePiece = null;
+    }
+    
   }); 
 
 }); 

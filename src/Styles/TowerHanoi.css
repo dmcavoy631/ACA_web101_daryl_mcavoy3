@@ -46,7 +46,15 @@
   background-color: rgb(184, 11, 11);
 }
 
-[tower]{
+[class^="tower"]{
   display: flex;
   flex-direction: column;
+  height: 200px;
+  width: 200px;
+  background-color: burlywood;
+}
+.tower2{
+  height: 200px;
+  width: 200px;
+  background-color: burlywood;
 }
