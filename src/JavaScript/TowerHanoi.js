@@ -5,11 +5,15 @@ $(document).ready(function() {
 
   $('.gamePiece').click(function(){
     $gamePiece = $(this);
-    //  log gamePiece
-    console.log(this);
-    // append game 
-    // $(this).appendTo($(this).parent());
+    // get game piece parent element (pos/tower)
+    $gamePos = $(this).parent();
 
+    //  log gamePiece and pos
+    console.log(this)
+    console.log($gamePos);
+
+    // remove game pice 
+    $(this).remove();
 
   });
 
