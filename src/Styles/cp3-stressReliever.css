@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+body{
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 100%);background-color: black;
+}
+
+.spaceCats{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#myVideo{
+  position: relative;
+  border-radius: 10%;
+  border: solid rgb(63,94,251) 5px;
+  height: 95vh;
+}
+
+.spaceJunk{
+  width: 100px;
+}
+
+#myBtn{
+  width: 100%;
+  height: 50px;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 1.2em;
+}
+
+p{
+  color: white;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 1.2em;
+}
+/* *{
+  border: red 1px solid;
+} */
