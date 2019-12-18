@@ -12,15 +12,13 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 100%);ba
   justify-content: space-evenly;
 }
 
-#myVideo{
-  position: relative;
-  border-radius: 10%;
-  border: solid rgb(63,94,251) 5px;
-  height: 95vh;
-}
+
 
 .spaceJunk{
-  width: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  margin-right: 80%;
 }
 
 #myBtn{
@@ -35,6 +33,52 @@ p{
   font-family: 'Odibee Sans', cursive;
   font-size: 1.2em;
 }
-/* *{
-  border: red 1px solid;
+/* .box{
+  height: 80vh;
+  width: 100vh;
+  border: solid rgb(63,94,251) 5px;
+  border-radius: 20px;
+  position: relative;
+  
 } */
+
+#myVideo {
+  display: flex;
+  height: 80vh;
+  border: solid rgb(63,94,251) 5px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -100;
+}
+
+
+
+.#myVideo > .icon {
+  animation: xAxis 2.5s cubic-bezier(0.02, 0.01, 0.21, 1);
+  align-self: center;
+  z-index: 100;
+}
+
+.#myVideo > .icon:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  animation: yAxis 2.5s cubic-bezier(0.3, 0.27, 0.07, 1.64); 
+}
+
+@keyframes yAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    transform: translateY(-100px) rotate(0);
+  }
+}
+
+@keyframes xAxis {
+  50% {
+    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+    transform: translateX(100px) rotate(360deg) scale(1,2);
+  }
+}
