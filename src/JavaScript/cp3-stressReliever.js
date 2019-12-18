@@ -11,7 +11,7 @@ var $x = null;
       $(this).removeClass('animated shake');});
     $x = $(this).clone();
 
-    $('.box').append($x);
+    // $('.box').append($x);
     $('.spaceCats').append($x);
     
   // increase count and console
