@@ -11,8 +11,8 @@ var $x = null;
       $(this).removeClass('animated shake');});
     $x = $(this).clone();
 
-    // $('.box').append($x);
-    $('.spaceCats').append($x);
+    // .append($x)  ICON to spaceCats Flex;
+    $('.videoScr').append($x);
     
   // increase count and console
   $count++;
@@ -25,17 +25,8 @@ var $x = null;
     // This will add a counter but needs work.
     // ,$(this).html($count)
 
-
-
-
-
-    // add count this = next()
-    // console.log(this);
-
-    
-
     // Alert Box
-    if($count > 20) {
+    if($count === 20) {
       alert("This is getting werid...maybe you should stop")
     } 
 
