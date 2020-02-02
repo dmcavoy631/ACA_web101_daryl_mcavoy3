@@ -1,33 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="../Styles/ticTacToe.css">
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <!--bootstrap & style links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/ticTacToe.css">
+    <!-- link to JavaScript code -->
+    <script src=../JavaScript/tictacToe.js></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Tic Tac Toe</h1>
+        <p>Get ready to play!</p>
+        <!-- uses the built-in onclick attribute to call the resetBoard function -->
+        <button onclick="resetBoard()" type="button" class="btn btn-primary btn-lg" name="button">Start/Restart</button>
 
-  <!-- Button for X's and O's -->
-  <button onclick="gameMarker('X')">"X"</button>
-  <button onclick="gameMarker('O')">"O"</button>
+        <button onclick="resetScore()" type="button" class="btn btn-primary btn-lg" name="button">Reset Score</button>
+        
+          <div class="scoreBrd">
+            <div id="playerX">
+              <ul>
+                <li id="xName">Player X</li>
+                <li id="scoreX">Score</li>
+              </ul> 
+            </div>
+            <div id="playerO">
+              <ul>
+                <li id="oName">Player O</li>
+                <li id="scoreO">Score</li>
+              </ul>
 
-  <!-- GameBaord Grid 3x3 -->
-  <div class="gameBoard">
-    <div onclick="placeMark('b1')" class="box "id="b1">
-    <p></p></div>
-    <div onclick="placeMark('b2')" class="box "id="b2"></div>
-    <div onclick="placeMark('b3')" class="box "id="b3"></div>
-    <div onclick="placeMark('b4')" class="box "id="b4"></div>
-    <div onclick="placeMark('b5')" class="box "id="b5"></div>
-    <div onclick="placeMark('b6')" class="box "id="b6"></div>
-    <div onclick="placeMark('b7')" class="box "id="b7"></div>
-    <div onclick="placeMark('b8')" class="box "id="b8"></div>
-    <div onclick="placeMark('b9')" class="box "id="b9"></div>
-  </div>
+            </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- Calling javascript file -->
-  <script src="../JavaScript/ticTacToe.js"></script>
-</body>
+      </div>
+
+      <table align="center">
+        <tr>
+          <!-- Each table-data (td) has an id that matches it's position in the array or arrays [0][1] -->
+          <td id='0-0' onclick="handleClick(this)" ></td>
+          <td id='0-1' onclick="handleClick(this)" ></td>
+          <td id='0-2' onclick="handleClick(this)" ></td>
+        </tr>
+        <tr>
+          <!-- onclick calls a function called handleClick and passes itself to it("this") -->
+          <td id='1-0' onclick="handleClick(this)" ></td>
+          <td id='1-1' onclick="handleClick(this)" ></td>
+          <td id='1-2' onclick="handleClick(this)" ></td>
+        </tr>
+        <tr>
+          <td id='2-0' onclick="handleClick(this)" ></td>
+          <td id='2-1' onclick="handleClick(this)" ></td>
+          <td id='2-2' onclick="handleClick(this)" ></td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
