@@ -1,13 +1,38 @@
-.gameBoard {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 100px 100px;
-}
-
-.box{
-  border: black 1px solid;
+td{
+  height:150px;
+  width:150px;
   text-align: center;
-  font-size: 1.5em;
-  padding-top: 35%;
+  border: 5px solid black;
+  font-size: 100px;
 }
 
+ul{
+  list-style: none;
+}
+
+
+.scoreBrd{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  font-size: 2.0rem;
+}
+
+#playerX{
+  background-color: cyan;
+  width: 25%;
+  height: auto;
+}
+
+#playerO{
+  background-color: cadetblue;
+  width: 25%; 
+  height: auto;
+}
+
+.yourTurn{
+  border: solid black 3px;
+}
