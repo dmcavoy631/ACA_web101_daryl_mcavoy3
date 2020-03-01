@@ -31,50 +31,22 @@
 <div class="Todo">  
 
        <!-- Todo Internal Grid 2 Columns Start -->
-      <div class="TodoFlex">
-        <div>
-          <ul class="TDtask">
-            <p>Task</p>
-            <li>
-            <input type="text" name="Todo" value="..."> 
-            </li>
-            <li>
-            <input type="text" name="Todo" value="..."> 
-            </li>
-            <li>
-            <input type="text" name="Todo" value="..."> 
-            </li>
-            <li>
-            <input type="text" name="Todo" value="..."> 
-            </li>
-            <li>
-            <input type="text" name="Todo" value="..."> 
-            </li>
-          </ul>
-        </div>
-        <div> 
-          <ul class="TDdone"> 
-            <p>Done</p>
-              <li>
-              <input type="checkbox" id="Item 1" value="Item 1">
-              </li> 
-              <li>
-              <input type="checkbox" id="Item 2" value="Item 2">
-              </li>
-              <li>
-              <input type="checkbox" id="Item 3" value="Item 3">
-              </li>
-              <li>
-              <input type="checkbox" id="Item 4" value="Item 4">
-              </li>
-              <li>
-              <input type="checkbox" id="Item 5" value="Item 5">
-              </li>
-          </ul>
-        </div>
+      <div id="TodoFlex">
+
+        <!-- Form to enter tasks. -->
+        <form id=todoList>
+          <p>TO DO LIST </p>
+          <input type="text" id="ToDo" value="Enter a task">
+          <input type="submit" id="AddTask" value="Task">
+
+          <!-- Add li Tasks here -->
+          <ul class="TDtask"></ul>
+        </form>
       </div>
+
       <button onclick="getGPSLocation()">Get Location!</button>
       <p id="GPSlocation"></p>
+
 </div>
 
     <!-- Todo Start -->
@@ -111,9 +83,24 @@ document.getElementById('clockbox').innerHTML=clocktext;
 GetClock();
 setInterval(GetClock,1000);
 </script> 
+
+
+
+
       
 
     </div>
+
+<!-- Jquery CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+  </script>
+
+<!-- Calling javascript file -->
+<script src="../JavaScript/toDo.js"></script>
+
   <script src="../JavaScript/getLocation.js"></script>
   </body>
 </html>
